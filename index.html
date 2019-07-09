@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <div id="test" style="color: #ccc; width: 100px;" data-src="oooo">
+    <span>你在他想还好吗</span>
+  </div>
+  <p>sss</p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <script src="Xuery.js"></script>
+  <script>
+    console.log(Xuery('#test').css('color', '#000'))
+    console.log(Xuery('#test').html('<i>嘀哩嘀哩地</i>'))
+    console.log(Xuery('p').attr({'data-src': 'dsdsdsdsds'}))
+    console.log(Xuery('p').attr('data-src'))
+    Xuery('#test').on('click', function() {
+      alert('l')
+    })
+  </script>
+</body>
+
+</html>
